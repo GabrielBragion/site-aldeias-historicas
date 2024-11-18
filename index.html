@@ -8,44 +8,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/geral.css" />
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/geral.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/corrousel.js"></script>
   </head>
+
   <body>
+     <div class="animacaoEntrada">
+      <div class="text-container">
+        <svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M41.1882 40L29.5 6.52576L17.812 39.9995L0.188678 39.9679L0 39.9026L13.9328 0L14.0773 0.0500395H16.4826V6.40506H20.1008V0.0500395H23.9199V6.40506H27.5381V0.0500395H31.5582V6.40506H35.1764V0.0500395H38.9955V6.40506H42.6136V0.0500395H44.8535L43.1802 0.653348L45.0672 0L59 39.9026L58.8098 39.9685L41.1882 40Z"
+            fill="#fcf7f8" />
+        </svg>
+        <h1>Aldeias Historicas</h1>
+      </div>
+    </div>
+
     <div class="border-bottom-header">
       <header class="container">
-        <a class="logo" href="/">
-          <svg
-            width="59"
-            height="40"
-            viewBox="0 0 59 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <a class="logo" href="index.html">
+          <svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M41.1882 40L29.5 6.52576L17.812 39.9995L0.188678 39.9679L0 39.9026L13.9328 0L14.0773 0.0500395H16.4826V6.40506H20.1008V0.0500395H23.9199V6.40506H27.5381V0.0500395H31.5582V6.40506H35.1764V0.0500395H38.9955V6.40506H42.6136V0.0500395H44.8535L43.1802 0.653348L45.0672 0L59 39.9026L58.8098 39.9685L41.1882 40Z"
-              fill="#2E382E"
-            />
+              fill="#2E382E" />
           </svg>
           <h1 class="logo-text">Aldeias Históricas</h1>
         </a>
         <nav>
+          <div class="btn-menu">
+            <div class="linha linha-top"></div>
+            <div class="linha linha-mid"></div>
+            <div class="linha linha-bot"></div>
+          </div>
           <ul class="menu">
-            <li>Aldeias</li>
-            <li>Registo</li>
-            <li>Login</li>
+            <li class="dropdown seta">
+              <div class="dropbtn">Aldeias</div>
+              <div class="dropdown-content">
+                <a href="almeida.html">Almeida</a>
+                <a href="linharesdabeira.html">Linhares da Beira</a>
+                <a href="marialva.html">Marialva</a>
+                <a href="monstanto.html">Monsanto</a>
+                <a href="castelorodrigo.html">Castelo Rodrigo</a>
+              </div>
+            </li>
+            <li><a href="registo.html">Registo</a></li>
+            <li class="modal-btn">Login</li>
           </ul>
         </nav>
       </header>
     </div>
 
+    <div class="modal">
+      <div class="modal-content">
+        <div class="btn-fechar">X</div>
+        <div class="form-wrap">
+          <h1 class="title">Login</h1>
+          <form class="form-login">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" />
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <button>Entrar</button>
+            <button class="btn-cancelar">Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <main class="container grid-home">
-      <div>
+      <div class="info-home">
         <h1 class="title">Aldeias Históricas de Portugal</h1>
         <h2 class="subtitle">Onde cada pedra conta uma história</h2>
         <div class="btn-wrap">
@@ -104,26 +138,26 @@
           <div class="indicator"></div>
         </div>
       </div>
-      
+
       <iframe
         class="video-home"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/Z29D91dHC7I?si=IA2gw-bA0rDMWTTa"
-        title="YouTube video player"
+        src="https://www.youtube.com/embed/Z29D91dHC7I?si=IA2gw-bA0rDMWTTa&controls=0&modestbranding=1&rel=0&showinfo=0"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen></iframe>
     </main>
 
-    <footer>
+    <footer class="footer-home">
       <div class="container">
-        <a href="https://gabrielbragion.github.io/Portfolio/" target="_blank"
-          >Desenvolvido por Gabriel Bragion</a
-        >
+        <a href="https://gabrielbragion.github.io/Portfolio/" target="_blank">Desenvolvido por Gabriel Bragion</a>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/corrousel.js"></script>
+    <script src="js/dropdownMenu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/btnMenu.js"></script>
+    <script src="js/handleAnimacao.js"></script>
   </body>
 </html>

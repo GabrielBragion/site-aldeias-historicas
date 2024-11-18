@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aldeias Históricas - Castelo Rodrigo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/geral.css"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="border-bottom-header">
+      <header class="container">
+        <a class="logo" href="index.html">
+          <svg
+            width="59"
+            height="40"
+            viewBox="0 0 59 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M41.1882 40L29.5 6.52576L17.812 39.9995L0.188678 39.9679L0 39.9026L13.9328 0L14.0773 0.0500395H16.4826V6.40506H20.1008V0.0500395H23.9199V6.40506H27.5381V0.0500395H31.5582V6.40506H35.1764V0.0500395H38.9955V6.40506H42.6136V0.0500395H44.8535L43.1802 0.653348L45.0672 0L59 39.9026L58.8098 39.9685L41.1882 40Z"
+              fill="#2E382E"
+            />
+          </svg>
+          <h1 class="logo-text">Aldeias Históricas</h1>
+        </a>
+        <nav>
+          <div class="btn-menu">
+            <div class="linha linha-top"></div>
+            <div class="linha linha-mid"></div>
+            <div class="linha linha-bot"></div>
+          </div>
+          <ul class="menu">
+            <li class="dropdown seta">
+              <div class="dropbtn">Aldeias</div>
+              <div class="dropdown-content">
+                <a href="almeida.html">Almeida</a>
+                <a href="linharesdabeira.html">Linhares da Beira</a>
+                <a href="marialva.html">Marialva</a>
+                <a href="monstanto.html">Monsanto</a>
+                <a href="castelorodrigo.html">Castelo Rodrigo</a>
+              </div>
+            </li>
+            <li><a href="registo.html">Registo</a></li>
+            <li class="modal-btn">Login</li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <div class="btn-fechar">X</div>
+        <div class="form-wrap">
+          <h1 class="title">Login</h1>
+          <form class="form-login">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" />
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <button>Entrar</button>
+            <button class="btn-cancelar">Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <main class="container registo-grid" style="margin-top: 0;">
+      <div class="form-wrap">
+        <h1 class="title">Registo</h1>
+        <form class="form-login">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required/>
+          <label for="utilizador">Nome de Utilizador</label>
+          <input type="text" id="utilizador" minlength="6" maxlength="20" required/>
+          <label for="email-registo">E-mail</label>
+          <input type="email-registo" id="email-registo" required/>
+          <label for="password-registo">Password</label>
+          <input type="password" id="password-registo" minlength="6" maxlength="15" required/>
+          <label for="confirmpassword">Confirmar Password</label>
+          <input type="password" id="confirmpassword" minlength="6" maxlength="15" required/>
+          <span id="error-message" style="color: red; display: none;">As senhas não coincidem</span>
+          <button class="submit-btn">Criar Conta</button>
+        </form>
+      </div>
+      <div class="img-wrap">
+        <img src="assets/imagens/registo.png" alt="foto de um castelo" style="object-fit: cover; height: 79dvh;"/>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <a href="https://gabrielbragion.github.io/Portfolio/" target="_blank">Desenvolvido por Gabriel Bragion</a>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/corrousel.js"></script>
+    <script src="js/dropdownMenu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/btnMenu.js"></script>
+    <script src="js/validarPassword.js"></script>
+  </body>
+</html>

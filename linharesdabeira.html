@@ -8,36 +8,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/geral.css" />
   </head>
   <body>
     <div class="border-bottom-header">
       <header class="container">
-        <a class="logo" href="/">
-          <svg
-            width="59"
-            height="40"
-            viewBox="0 0 59 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <a class="logo" href="index.html">
+          <svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M41.1882 40L29.5 6.52576L17.812 39.9995L0.188678 39.9679L0 39.9026L13.9328 0L14.0773 0.0500395H16.4826V6.40506H20.1008V0.0500395H23.9199V6.40506H27.5381V0.0500395H31.5582V6.40506H35.1764V0.0500395H38.9955V6.40506H42.6136V0.0500395H44.8535L43.1802 0.653348L45.0672 0L59 39.9026L58.8098 39.9685L41.1882 40Z"
-              fill="#2E382E"
-            />
+              fill="#2E382E" />
           </svg>
           <h1 class="logo-text">Aldeias Históricas</h1>
         </a>
         <nav>
+          <div class="btn-menu">
+            <div class="linha linha-top"></div>
+            <div class="linha linha-mid"></div>
+            <div class="linha linha-bot"></div>
+          </div>
           <ul class="menu">
-            <li>Aldeias</li>
-            <li>Registo</li>
-            <li>Login</li>
+            <li class="dropdown seta">
+              <div class="dropbtn">Aldeias</div>
+              <div class="dropdown-content">
+                <a href="almeida.html">Almeida</a>
+                <a href="linharesdabeira.html">Linhares da Beira</a>
+                <a href="marialva.html">Marialva</a>
+                <a href="monstanto.html">Monsanto</a>
+                <a href="castelorodrigo.html">Castelo Rodrigo</a>
+              </div>
+            </li>
+            <li><a href="registo.html">Registo</a></li>
+            <li class="modal-btn">Login</li>
           </ul>
         </nav>
       </header>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <div class="btn-fechar">X</div>
+        <div class="form-wrap">
+          <h1 class="title">Login</h1>
+          <form class="form-login">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" />
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <button>Entrar</button>
+            <button class="btn-cancelar">Cancelar</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <main class="container grid-aldeia">
@@ -45,69 +68,48 @@
         <h1 class="title">Linheira da Beira</h1>
         <div class="wrap-info-text">
           <p>
-            Aldeia medieval do século XII, Linhares da Beira possui uma
-            diversidade arquitetónica e artística ímpar, fruto do legado de
-            várias épocas. Em 1169, recebeu o seu primeiro foral, atribuído por
-            D. Afonso Henriques. Mas só mais tarde, no reinado de D. Dinis, foi
-            erigido o seu imponente Castelo, ex-líbris da aldeia e principal
-            cartão de visita nos nossos dias. Deambular pelas ruas desta aldeia
-            museu é fazer uma incursão ao passado, à sua história, e sentir a
-            brisa do Vale do Mondego a acariciar-nos o rosto.
+            Aldeia medieval do século XII, Linhares da Beira possui uma diversidade arquitetónica e artística ímpar,
+            fruto do legado de várias épocas. Em 1169, recebeu o seu primeiro foral, atribuído por D. Afonso Henriques.
+            Mas só mais tarde, no reinado de D. Dinis, foi erigido o seu imponente Castelo, ex-líbris da aldeia e
+            principal cartão de visita nos nossos dias. Deambular pelas ruas desta aldeia museu é fazer uma incursão ao
+            passado, à sua história, e sentir a brisa do Vale do Mondego a acariciar-nos o rosto.
           </p>
           <p>
-            Vila de fundação medieval, com foral concedido em 1169 por D. Afonso
-            Henriques, que, em 1855 perde este estatuto com a reforma
-            administrativa liberal. Apesar do local ter conhecido a fixação de
-            povos pré-romanos e existir registo escrito da passagem de romanos,
-            visigodos e muçulmanos, a história de Linhares, tem origem no
-            contexto gerado com a reconquista Cristã. Estabilizadas as
-            fronteiras do reino português, Linhares continuou a ter significado
-            estratégico pelo menos até ao século XVII, pois fazia parte do
-            sistema defensivo que guardava a Bacia do Mondego, na retaguarda das
-            fortificações da raia beirã.
+            Vila de fundação medieval, com foral concedido em 1169 por D. Afonso Henriques, que, em 1855 perde este
+            estatuto com a reforma administrativa liberal. Apesar do local ter conhecido a fixação de povos pré-romanos
+            e existir registo escrito da passagem de romanos, visigodos e muçulmanos, a história de Linhares, tem origem
+            no contexto gerado com a reconquista Cristã. Estabilizadas as fronteiras do reino português, Linhares
+            continuou a ter significado estratégico pelo menos até ao século XVII, pois fazia parte do sistema defensivo
+            que guardava a Bacia do Mondego, na retaguarda das fortificações da raia beirã.
           </p>
           <p>
-            A estrutura de ocupação do espaço da antiga vila de Linhares conjuga
-            assim um tipo característico de povoamento medieval (séculos
-            XII-XIV), com desenvolvimentos significativos no período
-            quinhentista (século XVI). Nesta centúria a vila terá atingido uma
-            configuração próxima da atual, ainda que no património edificado
-            pesem, pelo impacto no tecido urbano, algumas construções mais
-            tardias (séculos XVII-XIX). O castelo, implantado num cabeço rochoso
-            a cerca de 820 m de altitude e dominando o Vale do Mondego,
-            constitui o núcleo gerador do aglomerado. Na encosta, sobranceira à
-            várzea de Linhares e cruzada por antiga via romana, estendeu-se a
-            povoação: o sistema fortificado, entregue a um alcaide e dispondo de
-            pequena guarnição militar, defendia um território bem como a sua
-            população e bens; o foral, concedido pelo Rei, prescrevia a
-            autonomia concelhia e organizava a vida económica e social do
-            povoado; a Igreja estabeleceu as paróquias.
+            A estrutura de ocupação do espaço da antiga vila de Linhares conjuga assim um tipo característico de
+            povoamento medieval (séculos XII-XIV), com desenvolvimentos significativos no período quinhentista (século
+            XVI). Nesta centúria a vila terá atingido uma configuração próxima da atual, ainda que no património
+            edificado pesem, pelo impacto no tecido urbano, algumas construções mais tardias (séculos XVII-XIX). O
+            castelo, implantado num cabeço rochoso a cerca de 820 m de altitude e dominando o Vale do Mondego, constitui
+            o núcleo gerador do aglomerado. Na encosta, sobranceira à várzea de Linhares e cruzada por antiga via
+            romana, estendeu-se a povoação: o sistema fortificado, entregue a um alcaide e dispondo de pequena guarnição
+            militar, defendia um território bem como a sua população e bens; o foral, concedido pelo Rei, prescrevia a
+            autonomia concelhia e organizava a vida económica e social do povoado; a Igreja estabeleceu as paróquias.
           </p>
           <p>
-            A vila descreve, no sopé do Castelo, um perímetro triangular, em
-            cujos vértices se situam três espaços ordenadores da malha urbana: o
-            Lg. da Misericórdia, à entrada da povoação; o Lg. de S. Pedro, na
-            zona denominada “Cimo da Vila”; e o Lg. da Igreja, próximo do
-            Castelo e no acesso ao Campo da Corredoura, terreno de usufruto
-            comum. Estes largos definiram-se em torno de igrejas – hoje
-            desaparecida a de S. Pedro – e constituíam o centro das paróquias de
-            fundação medieval. Na base do triângulo e no ponto oposto à Matriz,
+            A vila descreve, no sopé do Castelo, um perímetro triangular, em cujos vértices se situam três espaços
+            ordenadores da malha urbana: o Lg. da Misericórdia, à entrada da povoação; o Lg. de S. Pedro, na zona
+            denominada “Cimo da Vila”; e o Lg. da Igreja, próximo do Castelo e no acesso ao Campo da Corredoura, terreno
+            de usufruto comum. Estes largos definiram-se em torno de igrejas – hoje desaparecida a de S. Pedro – e
+            constituíam o centro das paróquias de fundação medieval. Na base do triângulo e no ponto oposto à Matriz,
             localiza-se o Lg. do Pelourinho, outrora o centro cívico da Vila.
           </p>
           <p>
-            Da assistência ao peregrino, pobres e doentes sobra-nos o edifício
-            do Lg. da Misericórdia, que acolheu duas instituições típicas da
-            sociedade medieval e moderna – a Albergaria e o Hospital. Também do
-            abastecimento de água, temos para observar três fontes dos séculos
-            XII, XVI e XIX. Além da casa tradicional e popular disseminada por
-            toda a vila, contam-se as casas nobres dos séculos XVIII-XIX,
-            destacando-se janelas e portas decoradas ao gosto Manuelino (século
-            XVI), quase sempre moradias de proprietários agrícolas mais
-            abastados ou da burguesia local ligada ao comércio. Entre estes
-            encontrava-se a comunidade judaica, minoria étnica e religiosa
-            obrigada a viver apartada da comunidade cristã e cujo bairro –
-            judiaria – se situava numa transversal à Rua Direita: sobre a porta
-            de acesso ao bairro (Arco) figura uma das mais elaboradas janelas
+            Da assistência ao peregrino, pobres e doentes sobra-nos o edifício do Lg. da Misericórdia, que acolheu duas
+            instituições típicas da sociedade medieval e moderna – a Albergaria e o Hospital. Também do abastecimento de
+            água, temos para observar três fontes dos séculos XII, XVI e XIX. Além da casa tradicional e popular
+            disseminada por toda a vila, contam-se as casas nobres dos séculos XVIII-XIX, destacando-se janelas e portas
+            decoradas ao gosto Manuelino (século XVI), quase sempre moradias de proprietários agrícolas mais abastados
+            ou da burguesia local ligada ao comércio. Entre estes encontrava-se a comunidade judaica, minoria étnica e
+            religiosa obrigada a viver apartada da comunidade cristã e cujo bairro – judiaria – se situava numa
+            transversal à Rua Direita: sobre a porta de acesso ao bairro (Arco) figura uma das mais elaboradas janelas
             manuelinas de Linhares.
           </p>
         </div>
@@ -122,48 +124,28 @@
         <ul class="previsao-tempo-lista">
           <li class="previsao-tempo-item">
             <span class="temperatura-dia">27/Outubro</span>
-            <img
-              class="temperatura-icon"
-              src="assets/icones/chuva.png"
-              alt=""
-            />
+            <img class="temperatura-icon" src="assets/icones/chuva.png" alt="" />
             <span class="temperatura-min">17º</span>
             <span class="temperatura-max">27º</span>
           </li>
           <li class="previsao-tempo-item">
             <span class="temperatura-dia">27/Outubro</span>
-            <img
-              class="temperatura-icon"
-              src="assets/icones/chuva.png"
-              alt=""
-            /><span class="temperatura-min">17º</span
+            <img class="temperatura-icon" src="assets/icones/chuva.png" alt="" /><span class="temperatura-min">17º</span
             ><span class="temperatura-max">27º</span>
           </li>
           <li class="previsao-tempo-item">
             <span class="temperatura-dia">27/Outubro</span>
-            <img
-              class="temperatura-icon"
-              src="assets/icones/chuva.png"
-              alt=""
-            /><span class="temperatura-min">17º</span
+            <img class="temperatura-icon" src="assets/icones/chuva.png" alt="" /><span class="temperatura-min">17º</span
             ><span class="temperatura-max">27º</span>
           </li>
           <li class="previsao-tempo-item">
             <span class="temperatura-dia">27/Outubro</span>
-            <img
-              class="temperatura-icon"
-              src="assets/icones/chuva.png"
-              alt=""
-            /><span class="temperatura-min">17º</span
+            <img class="temperatura-icon" src="assets/icones/chuva.png" alt="" /><span class="temperatura-min">17º</span
             ><span class="temperatura-max">27º</span>
           </li>
           <li class="previsao-tempo-item">
             <span class="temperatura-dia">27/Outubro</span>
-            <img
-              class="temperatura-icon"
-              src="assets/icones/chuva.png"
-              alt=""
-            /><span class="temperatura-min">17º</span
+            <img class="temperatura-icon" src="assets/icones/chuva.png" alt="" /><span class="temperatura-min">17º</span
             ><span class="temperatura-max">27º</span>
           </li>
         </ul>
@@ -175,34 +157,21 @@
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="carousel-aldeia carousel">
         <div class="carousel-inner">
           <div class="carousel-item">
-            <img
-              src="assets/imagens/linhares da beira/linhares1.png"
-              alt="Aldeia 1"
-            />
+            <img src="assets/imagens/linhares da beira/linhares1.png" alt="Aldeia 1" />
           </div>
           <div class="carousel-item">
-            <img
-            src="assets/imagens/linhares da beira/linhares2.png"
-              alt="Aldeia 2"
-            />
+            <img src="assets/imagens/linhares da beira/linhares2.png" alt="Aldeia 2" />
           </div>
           <div class="carousel-item">
-            <img
-            src="assets/imagens/linhares da beira/linhares3.png"
-              alt="Aldeia 3"
-            />
+            <img src="assets/imagens/linhares da beira/linhares3.png" alt="Aldeia 3" />
           </div>
           <div class="carousel-item">
-            <img
-            src="assets/imagens/linhares da beira/linhares1.png"
-              alt="Aldeia 1"
-            />
+            <img src="assets/imagens/linhares da beira/linhares1.png" alt="Aldeia 1" />
           </div>
         </div>
         <button class="prev"></button>
@@ -221,125 +190,214 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen></iframe>
 
       <section class="info-uteis">
         <h1 class="title">Informações Uteis</h1>
         <ul class="info-uteis-lista">
           <li class="info-uteis-item">
-            <a
-              href="https://www.tripadvisor.pt/Restaurants-g2437905-Linhares_da_Beira_Guarda_District_Central_Portugal.html"
-              target="_blank"
-            >
-              <svg
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask
+                id="mask0_45_312"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
                 width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <mask
-                  id="mask0_45_312"
-                  style="mask-type: alpha"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="48"
-                  height="48"
-                >
-                  <rect width="48" height="48" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_45_312)">
-                  <path
-                    d="M8.7502 37.7027L5.9502 35.3539L26.4502 18.1574C25.8502 16.983 25.7669 15.6549 26.2002 14.1729C26.6335 12.6909 27.5835 11.3627 29.0502 10.1884C30.8169 8.70638 32.7835 7.83957 34.9502 7.58791C37.1169 7.33626 38.8835 7.78365 40.2502 8.93007C41.6169 10.0765 42.1502 11.5585 41.8502 13.376C41.5502 15.1935 40.5169 16.8432 38.7502 18.3252C37.3502 19.5555 35.7669 20.3524 34.0002 20.7159C32.2335 21.0794 30.6502 21.0095 29.2502 20.5062L26.7502 22.6033L41.9502 35.3539L39.1502 37.7027L23.9502 25.036L8.7502 37.7027ZM14.6502 23.3583L8.6502 18.3252C6.8502 16.8153 5.9502 15.0117 5.9502 12.9146C5.9502 10.8175 6.8502 9.01396 8.6502 7.50403L21.0502 17.9897L14.6502 23.3583Z"
-                    fill="#3E3E3E"
-                  />
-                </g>
-              </svg>
-              <p>Restaurantes</p>
-            </a>
+                height="48">
+                <rect width="48" height="48" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_45_312)">
+                <path
+                  d="M8.7502 37.7027L5.9502 35.3539L26.4502 18.1574C25.8502 16.983 25.7669 15.6549 26.2002 14.1729C26.6335 12.6909 27.5835 11.3627 29.0502 10.1884C30.8169 8.70638 32.7835 7.83957 34.9502 7.58791C37.1169 7.33626 38.8835 7.78365 40.2502 8.93007C41.6169 10.0765 42.1502 11.5585 41.8502 13.376C41.5502 15.1935 40.5169 16.8432 38.7502 18.3252C37.3502 19.5555 35.7669 20.3524 34.0002 20.7159C32.2335 21.0794 30.6502 21.0095 29.2502 20.5062L26.7502 22.6033L41.9502 35.3539L39.1502 37.7027L23.9502 25.036L8.7502 37.7027ZM14.6502 23.3583L8.6502 18.3252C6.8502 16.8153 5.9502 15.0117 5.9502 12.9146C5.9502 10.8175 6.8502 9.01396 8.6502 7.50403L21.0502 17.9897L14.6502 23.3583Z"
+                  fill="#3E3E3E" />
+              </g>
+            </svg>
+            <p>Restaurantes</p>
           </li>
           <li class="info-uteis-item">
-            <a
-              href="https://www.vagamundos.pt/visitar-celorico-linhares-da-beira/"
-              target="_blank"
-            >
-              <svg
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask
+                id="mask0_45_318"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
                 width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <mask
-                  id="mask0_45_318"
-                  style="mask-type: alpha"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="48"
-                  height="48"
-                >
-                  <rect width="48" height="48" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_45_318)">
-                  <path
-                    d="M22 35.0375C23.8 35.0375 25.425 34.639 26.875 33.8421C28.325 33.0452 29.4167 32.0036 30.15 30.7174C29.6167 30.3259 29.0833 29.9135 28.55 29.4801C28.0167 29.0467 27.4833 28.5923 26.95 28.117C26.75 29.1795 26.1917 30.0393 25.275 30.6964C24.3583 31.3535 23.2667 31.6821 22 31.6821C20.6 31.6821 19.4167 31.2766 18.45 30.4657C17.4833 29.6549 17 28.6622 17 27.4878C17 26.3134 17.4917 25.3278 18.475 24.5309C19.4583 23.734 20.65 23.3215 22.05 23.2936C21.65 22.7903 21.2667 22.28 20.9 21.7627C20.5333 21.2454 20.1833 20.7211 19.85 20.1898C17.8833 20.6092 16.25 21.49 14.95 22.8322C13.65 24.1744 13 25.7262 13 27.4878C13 29.5849 13.875 31.3675 15.625 32.8355C17.375 34.3035 19.5 35.0375 22 35.0375ZM16 10.7108H18.5C18.3333 11.2421 18.2083 11.7873 18.125 12.3466C18.0417 12.9058 18 13.479 18 14.0662H17.75L14.1 17.4216H6V37.554H38V30.6335C38.6667 30.1302 39.3333 29.6059 40 29.0607C40.6667 28.5154 41.3333 27.9632 42 27.4039V37.554C42 38.4768 41.6083 39.2667 40.825 39.9238C40.0417 40.5809 39.1 40.9094 38 40.9094H6C4.9 40.9094 3.95833 40.5809 3.175 39.9238C2.39167 39.2667 2 38.4768 2 37.554V17.4216C2 16.4989 2.39167 15.709 3.175 15.0519C3.95833 14.3948 4.9 14.0662 6 14.0662H12.3L16 10.7108ZM34 29.1655C38.0333 26.2855 41.0417 23.6151 43.025 21.1545C45.0083 18.6939 46 16.415 46 14.3179C46 11.1582 44.7917 8.64863 42.375 6.78918C39.9583 4.92973 37.1667 4 34 4C30.8333 4 28.0417 4.92973 25.625 6.78918C23.2083 8.64863 22 11.1582 22 14.3179C22 16.415 22.9917 18.6939 24.975 21.1545C26.9583 23.6151 29.9667 26.2855 34 29.1655ZM34 24.6777C30.5333 21.9374 28.3333 19.7285 27.4 18.0507C26.4667 16.373 26 15.1288 26 14.3179C26 12.053 26.8417 10.3263 28.525 9.13796C30.2083 7.94959 32.0333 7.3554 34 7.3554C35.9667 7.3554 37.7917 7.94959 39.475 9.13796C41.1583 10.3263 42 12.053 42 14.3179C42 15.1288 41.5333 16.373 40.6 18.0507C39.6667 19.7285 37.4667 21.9374 34 24.6777ZM30.3 19.0993L31.7 15.2825L28 12.8079H32.55L34 9.0331L35.45 12.8079H40L36.3 15.2825L37.7 19.0993L34 16.7505L30.3 19.0993Z"
-                    fill="#3E3E3E"
-                  />
-                </g>
-              </svg>
-              <p>Pontos Turisticos</p>
-            </a>
+                height="48">
+                <rect width="48" height="48" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_45_318)">
+                <path
+                  d="M22 35.0375C23.8 35.0375 25.425 34.639 26.875 33.8421C28.325 33.0452 29.4167 32.0036 30.15 30.7174C29.6167 30.3259 29.0833 29.9135 28.55 29.4801C28.0167 29.0467 27.4833 28.5923 26.95 28.117C26.75 29.1795 26.1917 30.0393 25.275 30.6964C24.3583 31.3535 23.2667 31.6821 22 31.6821C20.6 31.6821 19.4167 31.2766 18.45 30.4657C17.4833 29.6549 17 28.6622 17 27.4878C17 26.3134 17.4917 25.3278 18.475 24.5309C19.4583 23.734 20.65 23.3215 22.05 23.2936C21.65 22.7903 21.2667 22.28 20.9 21.7627C20.5333 21.2454 20.1833 20.7211 19.85 20.1898C17.8833 20.6092 16.25 21.49 14.95 22.8322C13.65 24.1744 13 25.7262 13 27.4878C13 29.5849 13.875 31.3675 15.625 32.8355C17.375 34.3035 19.5 35.0375 22 35.0375ZM16 10.7108H18.5C18.3333 11.2421 18.2083 11.7873 18.125 12.3466C18.0417 12.9058 18 13.479 18 14.0662H17.75L14.1 17.4216H6V37.554H38V30.6335C38.6667 30.1302 39.3333 29.6059 40 29.0607C40.6667 28.5154 41.3333 27.9632 42 27.4039V37.554C42 38.4768 41.6083 39.2667 40.825 39.9238C40.0417 40.5809 39.1 40.9094 38 40.9094H6C4.9 40.9094 3.95833 40.5809 3.175 39.9238C2.39167 39.2667 2 38.4768 2 37.554V17.4216C2 16.4989 2.39167 15.709 3.175 15.0519C3.95833 14.3948 4.9 14.0662 6 14.0662H12.3L16 10.7108ZM34 29.1655C38.0333 26.2855 41.0417 23.6151 43.025 21.1545C45.0083 18.6939 46 16.415 46 14.3179C46 11.1582 44.7917 8.64863 42.375 6.78918C39.9583 4.92973 37.1667 4 34 4C30.8333 4 28.0417 4.92973 25.625 6.78918C23.2083 8.64863 22 11.1582 22 14.3179C22 16.415 22.9917 18.6939 24.975 21.1545C26.9583 23.6151 29.9667 26.2855 34 29.1655ZM34 24.6777C30.5333 21.9374 28.3333 19.7285 27.4 18.0507C26.4667 16.373 26 15.1288 26 14.3179C26 12.053 26.8417 10.3263 28.525 9.13796C30.2083 7.94959 32.0333 7.3554 34 7.3554C35.9667 7.3554 37.7917 7.94959 39.475 9.13796C41.1583 10.3263 42 12.053 42 14.3179C42 15.1288 41.5333 16.373 40.6 18.0507C39.6667 19.7285 37.4667 21.9374 34 24.6777ZM30.3 19.0993L31.7 15.2825L28 12.8079H32.55L34 9.0331L35.45 12.8079H40L36.3 15.2825L37.7 19.0993L34 16.7505L30.3 19.0993Z"
+                  fill="#3E3E3E" />
+              </g>
+            </svg>
+            <p>Pontos Turisticos</p>
           </li>
           <li class="info-uteis-item">
-            <a
-              href="https://www.tripadvisor.pt/Attractions-g2437905-Activities-Linhares_da_Beira_Guarda_District_Central_Portugal.html"
-              target="_blank"
-            >
-              <svg
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask
+                id="mask0_45_324"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
                 width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <mask
-                  id="mask0_45_324"
-                  style="mask-type: alpha"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="48"
-                  height="48"
-                >
-                  <rect width="48" height="48" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_45_324)">
-                  <path
-                    d="M13.9992 41.8969L20.1492 15.8087C20.3492 14.9978 20.7992 14.3896 21.4992 13.9842C22.1992 13.5787 22.9326 13.376 23.6992 13.376C24.4659 13.376 25.1742 13.5158 25.8242 13.7954C26.4742 14.0751 26.9992 14.4945 27.3992 15.0537L29.3992 17.738C29.9992 18.5489 30.7742 19.2829 31.7242 19.94C32.6742 20.5971 33.7659 21.0795 34.9992 21.387V18.4091H37.9992V41.8969H34.9992V24.8683C33.3992 24.5607 31.9159 24.0714 30.5492 23.4003C29.1826 22.7292 27.9992 21.9043 26.9992 20.9257L25.7992 25.9588L29.9992 29.3142V41.8969H25.9992V31.8307L21.7992 28.4753L18.1992 41.8969H13.9992ZM14.8492 25.3296L10.5992 24.6586C10.0659 24.5747 9.64922 24.344 9.34922 23.9665C9.04922 23.589 8.94922 23.1626 9.04922 22.6873L10.5492 16.1023C10.7492 15.2075 11.3159 14.5015 12.2492 13.9842C13.1826 13.4669 14.1826 13.2921 15.2492 13.4599L17.5492 13.8374L14.8492 25.3296ZM26.9992 12.5372C25.8992 12.5372 24.9576 12.2086 24.1742 11.5515C23.3909 10.8944 22.9992 10.1045 22.9992 9.18176C22.9992 8.25902 23.3909 7.4691 24.1742 6.812C24.9576 6.1549 25.8992 5.82635 26.9992 5.82635C28.0992 5.82635 29.0409 6.1549 29.8242 6.812C30.6076 7.4691 30.9992 8.25902 30.9992 9.18176C30.9992 10.1045 30.6076 10.8944 29.8242 11.5515C29.0409 12.2086 28.0992 12.5372 26.9992 12.5372Z"
-                    fill="#3E3E3E"
-                  />
-                </g>
-              </svg>
-              <p>Atividades</p>
-            </a>
+                height="48">
+                <rect width="48" height="48" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_45_324)">
+                <path
+                  d="M13.9992 41.8969L20.1492 15.8087C20.3492 14.9978 20.7992 14.3896 21.4992 13.9842C22.1992 13.5787 22.9326 13.376 23.6992 13.376C24.4659 13.376 25.1742 13.5158 25.8242 13.7954C26.4742 14.0751 26.9992 14.4945 27.3992 15.0537L29.3992 17.738C29.9992 18.5489 30.7742 19.2829 31.7242 19.94C32.6742 20.5971 33.7659 21.0795 34.9992 21.387V18.4091H37.9992V41.8969H34.9992V24.8683C33.3992 24.5607 31.9159 24.0714 30.5492 23.4003C29.1826 22.7292 27.9992 21.9043 26.9992 20.9257L25.7992 25.9588L29.9992 29.3142V41.8969H25.9992V31.8307L21.7992 28.4753L18.1992 41.8969H13.9992ZM14.8492 25.3296L10.5992 24.6586C10.0659 24.5747 9.64922 24.344 9.34922 23.9665C9.04922 23.589 8.94922 23.1626 9.04922 22.6873L10.5492 16.1023C10.7492 15.2075 11.3159 14.5015 12.2492 13.9842C13.1826 13.4669 14.1826 13.2921 15.2492 13.4599L17.5492 13.8374L14.8492 25.3296ZM26.9992 12.5372C25.8992 12.5372 24.9576 12.2086 24.1742 11.5515C23.3909 10.8944 22.9992 10.1045 22.9992 9.18176C22.9992 8.25902 23.3909 7.4691 24.1742 6.812C24.9576 6.1549 25.8992 5.82635 26.9992 5.82635C28.0992 5.82635 29.0409 6.1549 29.8242 6.812C30.6076 7.4691 30.9992 8.25902 30.9992 9.18176C30.9992 10.1045 30.6076 10.8944 29.8242 11.5515C29.0409 12.2086 28.0992 12.5372 26.9992 12.5372Z"
+                  fill="#3E3E3E" />
+              </g>
+            </svg>
+            <p>Atividades</p>
           </li>
         </ul>
+      </section>
+
+      <section class="opcao-selecionada">
+        <h1 class="title title-opcao-selecionada">Restaurantes</h1>
+        <p class="desc-opcao-selecionada">Os melhores restaurantes da região</p>
+        <div class="opcao-container">
+          <div class="opcao-item">
+            <h1>Nome Restaurante 01</h1>
+            <span class="tipopologia">Comida portuguesa</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/o-cacador.jpg" alt="foto de prato do restaurante" />
+          </div>
+          <div class="opcao-item">
+            <h1>Nome Restaurante 02</h1>
+            <span class="tipopologia">Comida portuguesa</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/o-cacador.jpg" alt="foto de prato do restaurante" />
+          </div>
+          <div class="opcao-item">
+            <h1>Nome Restaurante 03</h1>
+            <span class="tipopologia">Comida portuguesa</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/o-cacador.jpg" alt="foto de prato do restaurante" />
+          </div>
+        </div>
+        <div class="btn-prev btn-opcao-prev"></div>
+        <div class="btn-next btn-opcao-next"></div>
+      </section>
+
+      <section class="opcao-selecionada">
+        <h1 class="title title-opcao-selecionada">Pontos Turisticos</h1>
+        <p class="desc-opcao-selecionada">Conheças as belezas da aldeia</p>
+        <div class="opcao-container">
+          <div class="opcao-item">
+            <h1>Ponto 01</h1>
+            <span class="tipopologia">Monumento Histórico</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/almeida6.jpg" alt="foto de ponto turistico" />
+          </div>
+          <div class="opcao-item">
+            <h1>Ponto 02</h1>
+            <span class="tipopologia">Monumento Histórico</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/almeida7.jpg" alt="foto de ponto turistico" />
+          </div>
+          <div class="opcao-item">
+            <h1>Ponto 03</h1>
+            <span class="tipopologia">Monumento Histórico</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/almeida2.jpg" alt="foto de ponto turistico" />
+          </div>
+          <div class="opcao-item">
+            <h1>Ponto 04</h1>
+            <span class="tipopologia">Monumento Histórico</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/almeida5.jpg" alt="foto de ponto turistico" />
+          </div>
+          <div class="opcao-item">
+            <h1>Ponto 05</h1>
+            <span class="tipopologia">Monumento Histórico</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/almeida/almeida4.jpg" alt="foto de ponto turistico" />
+          </div>
+        </div>
+        <div class="btn-prev btn-opcao-prev"></div>
+        <div class="btn-next btn-opcao-next"></div>
+      </section>
+
+      <section class="opcao-selecionada">
+        <h1 class="title title-opcao-selecionada">Atividades</h1>
+        <p class="desc-opcao-selecionada">Lazer para todos, venha se divertir e conhecer a história</p>
+        <div class="opcao-container">
+          <div class="opcao-item">
+            <h1>Atividade 01</h1>
+            <span class="tipopologia">Atividade ao Ar Livre</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/natureza.jpg" alt="foto de uma paisagem natural" />
+          </div>
+          <div class="opcao-item">
+            <h1>Atividade 02</h1>
+            <span class="tipopologia">Atividade Indoor</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident repudiandae numquam maxime
+              blanditiis voluptatibus, expedita, at itaque fuga optio placeat ratione praesentium vero voluptatum magni
+              incidunt consequatur dicta quasi.
+            </p>
+            <img src="assets/imagens/natureza.jpg" alt="foto de uma paisagem natural" />
+          </div>
+        </div>
+        <div class="btn-prev btn-opcao-prev"></div>
+        <div class="btn-next btn-opcao-next"></div>
       </section>
     </main>
 
     <footer>
       <div class="container">
-        <a href="https://gabrielbragion.github.io/Portfolio/" target="_blank"
-          >Desenvolvido por Gabriel Bragion</a
-        >
+        <a href="https://gabrielbragion.github.io/Portfolio/" target="_blank">Desenvolvido por Gabriel Bragion</a>
       </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/corrousel.js"></script>
     <script src="js/previsaoTempo.js"></script>
+    <script src="js/dropdownMenu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/btnMenu.js"></script>
+    <script src="js/menuOpcoes.js"></script>
   </body>
 </html>
